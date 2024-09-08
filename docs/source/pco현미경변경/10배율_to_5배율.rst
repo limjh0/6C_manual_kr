@@ -7,7 +7,7 @@
 #. 실험허치에 들어가 **PCO1현미경** 의 ``pco.Edge카메라`` 의 전원을 끈다. **PCO2현미경** 의 ``pco.Edge카메라`` 의 전원을 켠다
 #. **광학테이블** 아래에 있는 ``trigger switch`` 를 ``PCO1`` 으로 변경한다
 
-    .. image:: images/001_trigger_switch.png
+    .. image:: images/0010_trigger_switch.png
         :align: center
 
 #. **수집PC** 에서 ``PCO_Startup`` folder 내 ``ADPcoIOC.bat`` 를 실행한다
@@ -50,7 +50,7 @@
     #. **SG현미경** 을 정렬함        
         #. ``Image Viewer`` form에 ``Sync`` 를 check 한다: 카메라와 shutter를 동기화함
 
-            .. image:: images/002_Image_viewer.png
+            .. image:: images/0020_Image_viewer.png
                 :align: center
 
         #. ``Time stamp`` 를 쓰려면 ``2`` ; 쓰지 않으려면 ``0``
@@ -62,15 +62,20 @@
         #. **SG_Stage** 의 ``X`` 값을 바꿔서 **PCO2현미경** 이 **sample stage** 뒤에 위치하게 한다
         #. **PCO2현미경** 코에 형광판을 달아서 빔 위치를 확인한다
 
-            .. image:: images/003_fluorescent_screen.png
+            .. image:: images/0030_fluorescent_screen.png
                 :align: center
 
         #. **Slit 2** 를 조정해 연다
         #. **Long movable mask** 를 조정해 연다
     #. Auto-focus 하기
+        #. 초점을 맞추기 위한 target object를 **sample stage** 에 거치한다
+
+            .. image:: images/0037_plywood.png
+                :align: center
+
         #. ROI 지정하기 위해 ``Box`` button을 누른다
 
-            .. image:: images/004_box_button.png
+            .. image:: images/0040_box_button.png
                 :align: center
 
         #. 빔이 상하로 움직이는 것이 영향을 주므로, 빔 밝기가 변하지 않는 지점에 ROI를 만든다
@@ -96,6 +101,7 @@
         #. **SG_Stage** ``Z2`` 가 찾아진 값으로 되어 있는지도 확인한다
         #. 최종적으로, ``Enable`` button을 눌러서 ``Stats`` LED가 켜지게 한다
 
-            .. image:: images/005_enable_button.png
+            .. image:: images/0050_enable_button.png
                 :align: center
 
+    #. Script를 작성한다
