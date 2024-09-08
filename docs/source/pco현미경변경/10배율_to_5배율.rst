@@ -7,6 +7,6 @@
 #. 실험허치에 들어가 **PCO2현미경** 의 ``pco.Edge카메라`` 의 전원을 끈다. **PCO1현미경** 의 ``pco.Edge카메라`` 의 전원을 켠다. 
 #. **광학테이블** 아래에 있는 ``trigger switch`` 를 ``PCO1`` 으로 변경한다.
 
-.. image:: images/001_trigger switch.png
+.. image:: images/001_trigger_switch.png
     :align: center
 
