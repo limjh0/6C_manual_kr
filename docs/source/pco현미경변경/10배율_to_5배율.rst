@@ -13,6 +13,7 @@
 #. **수집PC** 에서 ``PCO_Startup`` folder 내 ``ADPcoIOC.bat`` 를 실행한다
     #. Camera scan이 수행됨 (progress bar가 나타남)
     #. 아래의 메세지가 나오면 된 것임
+    
     ::
         Found 5 devices on Camera
 
