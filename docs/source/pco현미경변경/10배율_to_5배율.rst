@@ -18,5 +18,26 @@
 
             Found 5 devices on Camera
 
-#. **제어PC** 로 전환 후 terminal들을 켠다.
+#. **제어PC** 로 전환 후 terminal들을 켠다
+    #. ``Param``
+        * .txt file임
+        * pixel 크기를 입력함 (이후 auto-focus 작업 때 필요함)
+    #. ``RunViewer`` 를 실행함
+        #. GUI form이 생김
+        #. ``Image Viewer PCO`` button을 누름
+        #. auto-focusing을 위해 ``Data Viewer`` button을 누름
+        #. motor control을 위해 ``Stages [Manager]`` button을 누름 
+            * 암호: qlafkdls 6c
+    #. ``RunDAQ``를 실행함: script를 실행할 때 사용함
+        * Python terminal임
+        #. 카메라 인식을 위해 
+
+            .. code-block:: Python
+                setup_pco()
+
+        #. script folder로 이동하기 위해
+            .. code-block:: Python
+                cd ../run_scripts/
+
+    #. ``RunWriter``가 실행되어 있는지 확인함
 
