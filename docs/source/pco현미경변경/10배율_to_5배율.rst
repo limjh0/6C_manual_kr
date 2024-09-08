@@ -50,7 +50,7 @@
     #. **SG현미경** 을 정렬함        
         #. ``Image Viewer`` form에 ``sync`` 를 check 한다: 카메라와 shutter를 동기화함
 
-            .. image:: images/002_image_viewer.png
+            .. image:: images/002_Image_viewer.png
                 :align: center
 
         #. ``Time stamp`` 를 쓰려면 ``2`` ; 쓰지 않으려면 ``0``
@@ -64,3 +64,6 @@
 
             .. image:: images/003_fluorescent_screen.png
                 :align: center
+
+        #. **Slit 2** 를 조정해 연다
+        #. **Long movable mask** 를 조정해 연다
