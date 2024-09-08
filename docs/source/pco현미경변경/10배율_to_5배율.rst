@@ -4,7 +4,7 @@
 
 #. **제어PC** 에서 세 개의 terminal들 중, ``tiffWriter`` 를 제외한 ``PyDM`` terminal과 ``IPython`` terminal을 닫는다
 #. *원격데스크탑* 으로 **수집PC** 에 접속한다 (10.10.62.115) -> ``pco IOC`` terminal을 닫는다
-#. 실험허치에 들어가 **PCO2현미경** 의 ``pco.Edge카메라`` 의 전원을 끈다. **PCO1현미경** 의 ``pco.Edge카메라`` 의 전원을 켠다
+#. 실험허치에 들어가 **PCO1현미경** 의 ``pco.Edge카메라`` 의 전원을 끈다. **PCO2현미경** 의 ``pco.Edge카메라`` 의 전원을 켠다
 #. **광학테이블** 아래에 있는 ``trigger switch`` 를 ``PCO1`` 으로 변경한다
 
     .. image:: images/001_trigger_switch.png
@@ -23,8 +23,8 @@
         + ``tiffWriter`` terminal이 켜져 있어야 함: 획득한 영상을 자동으로 **storage server** 로 transfer함
         + 만약, **storage server** ``disk 번호`` 를 변경하려면 다음과 같이 한다
             #. 현재의 세 terminal을 모두 닫는다: ``tiffWriter``, ``PyDM``, ``IPython``
-            #. 평소하듯이 **storage server** ``disk 번호`` 를 변경하는데, 드라이브를 X:로 지정해야 한다
-            #. X: 드라이브의 이름이 틀리게 나오면--즉, **storage server** ``disk 번호`` 가 제대로 표기되지 않으면-- 컴퓨터를 reboot해야 함 (괜찮을 수도 있는데, test해 보지 않았음)
+            #. 평소하듯이 **storage server** ``disk 번호`` 를 변경하는데, 드라이브를 ``X:`` 로 지정해야 한다
+            #. ``X: 드라이브`` 의 이름이 틀리게 나오면--즉, **storage server** ``disk 번호`` 가 제대로 표기되지 않으면-- 컴퓨터를 reboot해야 함 (괜찮을 수도 있는데, test해 보지 않았음)
     #. ``Param``
         + .txt file임
         + pixel 크기를 입력함 (이후 auto-focus 작업 때 필요함)
@@ -46,6 +46,21 @@
             .. code-block:: Python
 
                 cd ../run_scripts/
+    
+    #. **SG현미경** 을 정렬함        
+        #. ``Image Viewer`` form에 ``sync`` 를 check 한다: 카메라와 shutter를 동기화함
 
+            .. image:: images/002_image_viewer.png
+                :align: center
 
+        #. ``Time stamp`` 를 쓰려면 ``2`` ; 쓰지 않으려면 ``0``
 
+            .. tip::
+
+                정렬 중에는 ``Time stamp`` 를 꺼둘 것: 영상의 histogram에 영향을 준다
+
+        #. **SG_Stage** 의 ``X`` 값을 바꿔서 **PCO2현미경** 이 **sample stage** 뒤에 위치하게 한다
+        #. **PCO2현미경** 코에 형광판을 달아서 빔 위치를 확인한다
+
+            .. image:: images/003_fluorescent_screen.png
+                :align: center
