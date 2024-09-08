@@ -14,9 +14,9 @@
     #. Camera scan이 수행됨 (progress bar가 나타남)
     #. 아래의 메세지가 나오면 된 것임
 
-    ::
+        ::
 
-        Found 5 devices on Camera
+            Found 5 devices on Camera
 
 #. **제어PC** 로 전환 후 terminal들을 켠다.
 
