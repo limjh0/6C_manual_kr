@@ -7,15 +7,15 @@
 #. 실험허치에 들어가 **PCO2현미경** 의 ``pco.Edge카메라`` 의 전원을 끈다. **PCO1현미경** 의 ``pco.Edge카메라`` 의 전원을 켠다
 #. **광학테이블** 아래에 있는 ``trigger switch`` 를 ``PCO1`` 으로 변경한다
 
-.. image:: images/001_trigger_switch.png
-    :align: center
+    .. image:: images/001_trigger_switch.png
+        :align: center
 
 #. **수집PC** 에서 ``PCO_Startup`` folder 내 ``ADPcoIOC.bat`` 를 실행한다
     #. Camera scan이 수행됨 (progress bar가 나타남)
     #. 아래의 메세지가 나오면 된 것임
 
     ::
-        
+
         Found 5 devices on Camera
 
 #. **제어PC** 로 전환 후 terminal들을 켠다.
