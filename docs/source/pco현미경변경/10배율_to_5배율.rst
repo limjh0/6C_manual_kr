@@ -19,6 +19,12 @@
             Found 5 devices on Camera
 
 #. **제어PC** 로 전환 후 terminal들을 켠다
+    #. ``RunWriter`` 가 실행되어 있는지 확인함
+        + ``tiffWriter`` terminal이 켜져 있어야 함: 획득한 영상을 자동으로 **storage server** 로 transfer함
+        + 만약, **storage server** ``disk 번호`` 를 변경하려면 다음과 같이 한다
+            #. 현재의 세 terminal을 모두 닫는다: ``tiffWriter``, ``PyDM``, ``IPython``
+            #. 평소하듯이 **storage server** ``disk 번호`` 를 변경하는데, 드라이브를 X:로 지정해야 한다
+            #. X: 드라이브의 이름이 틀리게 나오면--즉, **storage server** ``disk 번호`` 가 제대로 표기되지 않으면-- 컴퓨터를 reboot해야 함 (괜찮을 수도 있는데, test해 보지 않았음)
     #. ``Param``
         + .txt file임
         + pixel 크기를 입력함 (이후 auto-focus 작업 때 필요함)
@@ -41,5 +47,5 @@
 
                 cd ../run_scripts/
 
-    #. ``RunWriter`` 가 실행되어 있는지 확인함
+
 
