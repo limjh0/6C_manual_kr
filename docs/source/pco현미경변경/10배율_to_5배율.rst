@@ -48,7 +48,7 @@
                 cd ../run_scripts/
     
     #. **SG현미경** 을 정렬함        
-        #. ``Image Viewer`` form에 ``sync`` 를 check 한다: 카메라와 shutter를 동기화함
+        #. ``Image Viewer`` form에 ``Sync`` 를 check 한다: 카메라와 shutter를 동기화함
 
             .. image:: images/002_Image_viewer.png
                 :align: center
@@ -67,3 +67,19 @@
 
         #. **Slit 2** 를 조정해 연다
         #. **Long movable mask** 를 조정해 연다
+    #. Auto-focus 하기
+        #. ROI 지정하기 위해 ``Box`` button을 누른다
+
+            .. image:: images/004_box_button.png
+                :align: center
+
+        #. 빔이 상하로 움직이는 것이 영향을 주므로, 빔 밝기가 변하지 않는 지점에 ROI를 만든다
+        #. auto-focus를 실행한다: 가령, step size는 7 um, 횟수 21, 노출시간 0.1초
+
+            .. code-block:: Python
+
+                RE(screen_align_cen(pco, focus2, 대략적인 **SG_Stage** ``Z2`` 값, 7, 21, time=0.1)
+                RE(screen_align_cen(pco, focus2, 대략적인 **SG_Stage** ``Z2`` 값, step size, 횟수 (홀수여야 함), time=0.1)
+
+        #. Graph가 그려진다. 이 때, ``Total`` 은 불필요하므로 uncheck할 것
+        #. Graph가 그려지면 ``scintillator screen`` 의 tilt 제어를 할 것인지 물어 봄
