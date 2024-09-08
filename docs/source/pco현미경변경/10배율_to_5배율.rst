@@ -82,11 +82,20 @@
                 RE(screen_align_cen(pco, focus2, 대략적인 SG_Stage Z2 값, step size, 횟수 (홀수여야 함), time=0.1)
 
         #. Graph가 그려진다. 이 때, ``Total`` 은 불필요하므로 uncheck할 것
-        #. Graph가 그려지면 ``scintillator screen`` 의 tilt 제어를 자동으로 할 것인지 물어 봄. \ ``y`` 는 자동; ``n`` 은 수동
+        #. Graph가 그려지면 ``scintillation screen`` 의 tilt 제어를 자동으로 할 것인지 물어 봄. \ ``y`` 는 자동; ``n`` 은 수동
 
             .. warning::
 
-                ``n`` 을 누를 것.\
+                ``n`` 을 누를 것. \ 
                 ``y`` 로 했을 때 제대로 모터가 동작하는지 테스트가 되지 않았음.
 
-        #. 수동으로 tilt 제어한다.
+        #. 수동으로 tilt 제어한다. \ **Scintillator Tilt Stage** 에서 
+            + ``TR`` 을 수평조정 계산값 만큼 보낸다
+            + ``TB`` 를 수직조장 계산값 만큼 보낸다
+        #. Scintillator tilt를 조절했으면 auto-focus를 재실행해서 제대로 보정되었는지 확인한다
+        #. **SG_Stage** ``Z2`` 가 찾아진 값으로 되어 있는지도 확인한다
+        #. 최종적으로, ``Enable`` button을 눌러서 ``Stats`` LED가 켜지게 한다
+
+            .. image:: images/005_enable_button.png
+                :align: center
+
