@@ -82,4 +82,12 @@
                 RE(screen_align_cen(pco, focus2, 대략적인 **SG_Stage** ``Z2`` 값, step size, 횟수 (홀수여야 함), time=0.1)
 
         #. Graph가 그려진다. 이 때, ``Total`` 은 불필요하므로 uncheck할 것
-        #. Graph가 그려지면 ``scintillator screen`` 의 tilt 제어를 할 것인지 물어 봄
+        #. Graph가 그려지면 ``scintillator screen`` 의 tilt 제어를 자동으로 할 것인지 물어 봄. ``y`` 는 자동; ``n``은 수동
+
+            .. warning::
+
+                ``n`` 을 누를 것.
+                ``y`` 로 했을 때 제대로 모터가 동작하는지 테스트가 되지 않았음.
+
+        #. 수동으로 tilt 제어한다.
+        
