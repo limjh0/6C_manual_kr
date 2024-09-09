@@ -36,76 +36,77 @@
         Scan 완료가 아니라 cancel된 경우는 (가령 ``ctrl+C`` ) 데이터가 local에 남아 있음 -> 수동으로 지워야 함
 
 
+Script 예:
 
-.. code-block:: Python
-    cond = {
-    'exptime': 50,          # Expose time in milliseconds
-    
-    'numprj': 1,         # Number of frames   
-    'pathname': 'FF_DF',     # Path name
-    'numff': 5,             # Number of flat fields
-    'numdf': 5,             # Number of dark fields
-    'uuid': str(uuid.uuid4()), # Scan uuid
-    'pullback': 0,     # Pullback distance
-    'x2origin': -2910.00,   # Sample stage origin
-    #'default_speed': 4,     # Sample stage speed
-    #'stop_angle': 200,      # Target angle
-    }
-    #cond['scan_speed'] = 4 # Rot./min.
-    #cond['start_angle'] = 0 # Start angle
-
-    logger.info(f"Scan parameters : {cond}")
-
-    #pco.save_image(True)
-
-    @finalize_decorator(finalize)
-    def time_trigger():
-        """
-        """
-        # Enable saving
-        pco.save_image(True)
-        # Stats calculation is not needed
-        pco.enable_stats(False)
-
-
-        #logger.info(f"Moving sample.rot to {cond['start_angle']}, x2 to {cond['x2origin']}")
-        #yield from bps.mv(sample.rot.velocity, cond['default_speed'])
-        #yield from bps.mv(sample.rot, cond['start_angle'],
-        #                 sample.x2, cond['x2origin'])
-
-        # Set exposure time in seconds
-        yield from bps.mv(pco.cam.acquire_time, cond['exptime']/1000,
-                        pco.cam.num_images, 1,
-                        pco.cam.trigger_mode, 0) # Internal trigger
+    .. code-block:: Python
+        cond = {
+        'exptime': 50,          # Expose time in milliseconds
         
-        
-        # Dark fields
-        logger.info(f"Measure Dark field : {cond['numdf']} frames")
-        yield from bps.mv(shutter, 0) # Close shutter
-        yield from bp.count([pco],
-                            num=cond['numdf'],
-                            md={'reason': 'dark-field',
-                                'uuid': cond['uuid'],
-                                'settings': cond})
-        
-        #yield from bps.abs_set(sample.rot, 90)
+        'numprj': 1,         # Number of frames   
+        'pathname': 'FF_DF',     # Path name
+        'numff': 5,             # Number of flat fields
+        'numdf': 5,             # Number of dark fields
+        'uuid': str(uuid.uuid4()), # Scan uuid
+        'pullback': 0,     # Pullback distance
+        'x2origin': -2910.00,   # Sample stage origin
+        #'default_speed': 4,     # Sample stage speed
+        #'stop_angle': 200,      # Target angle
+        }
+        #cond['scan_speed'] = 4 # Rot./min.
+        #cond['start_angle'] = 0 # Start angle
 
-        # Flat fields
-        logger.info(f"Measure Flat field : {cond['numff']} frames")
-        #yield from bps.mvr(sample.x2, cond['pullback'])
-        #yield from bps.mvr(sample.wireless_x, cond['pullback'])
-        yield from bps.mv(shutter, 1)    
-        yield from bp.count([pco],
-                            num=cond['numff'],
-                            md={'reason': 'flat-field',
-                                'uuid': cond['uuid'],
-                                'settings': cond})
-        yield from bps.mv(shutter, 0)                                
-        #yield from bps.mvr(sample.x2, -1*cond['pullback'])
-        #yield from bps.mvr(sample.wireless_x, -1*cond['pullback'])
-        #yield from bps.abs_set(sample.rot, 0)
-        
-        pco.save_image(False)
+        logger.info(f"Scan parameters : {cond}")
 
-    RE(time_trigger())
+        #pco.save_image(True)
+
+        @finalize_decorator(finalize)
+        def time_trigger():
+            """
+            """
+            # Enable saving
+            pco.save_image(True)
+            # Stats calculation is not needed
+            pco.enable_stats(False)
+
+
+            #logger.info(f"Moving sample.rot to {cond['start_angle']}, x2 to {cond['x2origin']}")
+            #yield from bps.mv(sample.rot.velocity, cond['default_speed'])
+            #yield from bps.mv(sample.rot, cond['start_angle'],
+            #                 sample.x2, cond['x2origin'])
+
+            # Set exposure time in seconds
+            yield from bps.mv(pco.cam.acquire_time, cond['exptime']/1000,
+                            pco.cam.num_images, 1,
+                            pco.cam.trigger_mode, 0) # Internal trigger
+            
+            
+            # Dark fields
+            logger.info(f"Measure Dark field : {cond['numdf']} frames")
+            yield from bps.mv(shutter, 0) # Close shutter
+            yield from bp.count([pco],
+                                num=cond['numdf'],
+                                md={'reason': 'dark-field',
+                                    'uuid': cond['uuid'],
+                                    'settings': cond})
+            
+            #yield from bps.abs_set(sample.rot, 90)
+
+            # Flat fields
+            logger.info(f"Measure Flat field : {cond['numff']} frames")
+            #yield from bps.mvr(sample.x2, cond['pullback'])
+            #yield from bps.mvr(sample.wireless_x, cond['pullback'])
+            yield from bps.mv(shutter, 1)    
+            yield from bp.count([pco],
+                                num=cond['numff'],
+                                md={'reason': 'flat-field',
+                                    'uuid': cond['uuid'],
+                                    'settings': cond})
+            yield from bps.mv(shutter, 0)                                
+            #yield from bps.mvr(sample.x2, -1*cond['pullback'])
+            #yield from bps.mvr(sample.wireless_x, -1*cond['pullback'])
+            #yield from bps.abs_set(sample.rot, 0)
+            
+            pco.save_image(False)
+
+        RE(time_trigger())
 
