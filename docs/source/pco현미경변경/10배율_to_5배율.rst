@@ -104,4 +104,4 @@
             .. image:: images/0050_enable_button.png
                 :align: center
 
-    #. Script를 작성한다
+    #. :doc:`Script <../scripting/home>` 를 작성한다
