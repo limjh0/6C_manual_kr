@@ -1,7 +1,7 @@
 DMM 각 축의 이동 범위
 ==================
 
-+ 20240814 DMM encoder 교체 및 차폐보완 작업 중 hard limiter 위치를 변경했는데, 조치 미흡으로 1st crystal과 2nd crystal이 접근하다가 충둘힐 수 있음
++ 20240814 DMM encoder 교체 및 차폐보완 작업 중 hard limiter 위치를 변경했는데, 조치 미흡으로 1st crystal과 2nd crystal이 접근하다가 충돌할 수 있음
     .. image:: images/0010_dmm_safe_distance.png
         :align: center
 
@@ -34,7 +34,7 @@ DMM 각 축의 이동 범위
 
     .. warning::
 
-    theta2는 간혹 pulse 값을 잃어버리므로, 정기적으로 soft limiter 위치를 update해 줘야 함
+        ``theta2`` 는 간혹 pulse 값을 잃어버리므로, 정기적으로 soft limiter 위치를 update해 줘야 함
 
 + ``Ly``
     + 
