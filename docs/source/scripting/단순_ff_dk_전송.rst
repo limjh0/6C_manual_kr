@@ -27,7 +27,8 @@
 
         ::
 
-            Data/db/2024/09/09
+            Y:/Data/db/년도/월/일
+            Y:/Data/db/2024/09/09
 
     + 데이터를 **storage server** 로 전송 완료 후에 local의 데이터를 지운다 (저장 위치 folder는 남겨 둠)
 
