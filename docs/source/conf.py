@@ -3,7 +3,7 @@
 # -- Project information
 
 project = '6C Manual'
-copyright = '2024, Beamline 6C @ PLS-II'
+copyright = '2024, Jae-Hong Lim & Seob Gu Kim @ Beamline 6C of PLS-II'
 author = 'Jae-Hong Lim'
 
 release = '0.1'
