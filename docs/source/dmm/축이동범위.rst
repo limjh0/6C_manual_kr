@@ -17,6 +17,7 @@ DMM 각 축의 이동 범위
     + soft L+는 3도 = 5.19도p 
     + hard L-는 *현재 미측정*
     + soft L-는 -1도 = 1.19도p 
+    + 상기 pulse 값 측정일: 20240903
 
 + ``theta2``
     + **encoder** : 신호가 EPICS로 들어오지 않음
@@ -24,12 +25,18 @@ DMM 각 축의 이동 범위
         .. image:: images/0020_dmm_2nd_crystal_limiter_broken.png
             :align: center
 
-    + 수평 (즉, 0도) = 4.518도p (pulse 값으로 2.19도라는 의미임)
+    + 수평 (즉, 0도) = 4.518도p 
     + hard L+는 *고장*
     + soft L+는 3도 = 7.52도p 
     + hard L-는 *고장*
-    + soft L-는 -1도 = 3.52도p 
+    + soft L-는 -1도 = 3.52도p
+    + 상기 pulse 값 측정일: 20240910
 
+    .. warning::
 
+    theta2는 간혹 pulse 값을 잃어버리므로, 정기적으로 soft limiter 위치를 update해 줘야 함
+
++ ``Ly``
+    + 
 
 
