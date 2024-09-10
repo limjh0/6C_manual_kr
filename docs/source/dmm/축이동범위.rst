@@ -5,7 +5,7 @@ DMM 각 축의 이동 범위
     .. image:: images/0010_dmm_safe_distance.png
         :align: center
 
-.. warning::
+.. caution::
 
     현재 **hard limiter를 신뢰할 수 없고** , 또한 **encoder 신호가 나오지 않는 축들이 있어** 사용에 각별한 주의가 필요함
 
@@ -13,10 +13,10 @@ DMM 각 축의 이동 범위
     + **encoder** : 신호가 EPICS로 들어오지 않음
     + **limiter** : 정상임
     + 수평 (즉, 0도) = 2.190도p (pulse 값으로 2.19도라는 의미임)
-    + hard L+는 *현재 미측정*
-    + soft L+는 3도 = 5.19도p 
-    + hard L-는 *현재 미측정*
-    + soft L-는 -1도 = 1.19도p 
+    + ``hard L+`` 는 *현재 미측정*
+    + ``soft L+`` 는 3도 = 5.19도p 
+    + ``hard L-`` 는 *현재 미측정*
+    + ``soft L-`` 는 -1도 = 1.19도p 
     + 상기 pulse 값 측정일: 20240903
 
 + ``theta2``
@@ -26,13 +26,13 @@ DMM 각 축의 이동 범위
             :align: center
 
     + 수평 (즉, 0도) = 4.518도p 
-    + hard L+는 *고장*
-    + soft L+는 3도 = 7.52도p 
-    + hard L-는 *고장*
-    + soft L-는 -1도 = 3.52도p
+    + ``hard L+`` 는 *고장*
+    + ``soft L+`` 는 3도 = 7.52도p 
+    + ``hard L-`` 는 *고장*
+    + ``soft L-`` 는 -1도 = 3.52도p
     + 상기 pulse 값 측정일: 20240910
 
-    .. warning::
+    .. attention::
 
         ``theta2`` 는 간혹 pulse 값을 잃어버리므로, 정기적으로 soft limiter 위치를 update해 줘야 함
 
