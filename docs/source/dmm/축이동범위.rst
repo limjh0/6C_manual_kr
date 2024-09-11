@@ -1,7 +1,7 @@
 DMM 각 축의 이동 범위
 ==================
 
-+ 20240814 DMM encoder 교체 및 차폐보완 작업 중 hard limiter 위치를 변경했는데, 조치 미흡으로 1st crystal과 2nd crystal이 접근하다가 충돌할 수 있음
++ 20240814 DMM encoder 교체 및 차폐보완 작업 중 hard limiter 위치를 변경했는데, 조치 미흡으로 ``1st crystal`` 과 ``2nd crystal`` 이 접근하다가 충돌할 수 있음
     .. image:: images/0010_dmm_safe_distance.png
         :align: center
 
@@ -10,6 +10,7 @@ DMM 각 축의 이동 범위
     현재 **hard limiter를 신뢰할 수 없고** , 또한 **encoder 신호가 나오지 않는 축들이 있어** 사용에 각별한 주의가 필요함
 
 + ``theta1``
+    + ``1st crystal`` 의 기울인 각도
     + **encoder** : 신호가 EPICS로 들어오지 않음
     + **limiter** : 정상임
     + 수평 (즉, 0도) = 2.190도p (pulse 값으로 2.19도라는 의미임)
@@ -20,6 +21,7 @@ DMM 각 축의 이동 범위
     + 상기 pulse 값 측정일: 20240903
 
 + ``theta2``
+    + ``2nd crystal`` 의 기울인 각도
     + **encoder** : 신호가 EPICS로 들어오지 않음
     + **limiter** : 20240820 손상됨
         .. image:: images/0020_dmm_2nd_crystal_limiter_broken.png
@@ -37,6 +39,34 @@ DMM 각 축의 이동 범위
         ``theta2`` 는 간혹 pulse 값을 잃어버리므로, 정기적으로 soft limiter 위치를 update해 줘야 함
 
 + ``Ly``
-    + 
+    + ``2nd crystal`` 의 길이 방향 (즉, logitudinal) 이동
+    + **encoder** : 신호가 EPICS로 들어오지 않음
+    + **limiter** : 정상임
+    + ``hard L+`` 는 -302,738 ump (20240909 측정)
+    + ``soft L+`` 는 설정하지 않음
+    + ``hard L-`` 는 -1,083,548 ump로 추정됨 (= -302,738 ump - 780,810 ump; 20240909 측정에 근거해)
+        + ``hard L+`` 에서 ``hard L-`` 까지 거리: 780,810 ump (pulse 값으로 780,810 um라는 의미임) (20240806 측정)
+    + ``soft L-`` 는 -970,000 ump로 함 (20240909 설정)
+        + ``hard L+`` 에서 ``1st crystal`` 까지 최근접 했을 때 이동거리: 671,000 ump (20240814 측정; 그런데, 이 측정 때 ``hard L+`` pulse 값이 누락됨)
+        + ``hard L+`` 에서 ``1st crystal`` 까지 최근접 했을 때 limiter bolt과 limter switch 간 간격: 실질적으로 50,000 um 가량으로 보임 (20240814 측정)
+            .. image:: images/0030_Ly_limiter.png
+                :align: center
+        + 따라서, 실질적으로 최근접 할 수 있는 범위는 ``hard L+`` 로부터 780,810 um - 50,000 um = 730,000 um 는 될 것임
+        + 그러나, 20240814에 측정한 최근접 시 이동pulse 값인 671,000 ump를 ``soft L-`` 값으로 사용하기로 함. 즉, -302,738 ump - 671,000 ump
+    + encoder 사용 가능할 때 reference mark 위치: ``hard L+`` 에서 앞으로 -206,150 ump (20240806 측정)
 
+    .. attention::
+
+        ``Ly`` 도 pulse 값을 잃어버릴 수 있으므로, 정기적으로 soft limiter 위치를 update해 줘야 함
+
++ ``Z1``
+    + ``2nd crystal`` 의 높이
+    + **encoder** : 정상임
+    + **limiter** : 정상임
+    + ``hard L+`` 는 9,334 ume (encoder 값으로 9,334 um라는 의미임; 20240902 측정)
+        + ``hard L+`` 는 15,430 ume (encoder 값으로 15,430 um라는 의미임; 20240806 측정)
+    + ``soft L+`` 는 미설정
+    + ``hard L-`` 는 -3592 ume (20240806 측정)
+    + ``soft L-`` 는 -1도 = 3.52도p
+    + 상기 pulse 값 측정일: 20240910
 
