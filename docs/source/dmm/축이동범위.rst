@@ -51,6 +51,8 @@ DMM 각 축의 이동 범위
         + ``hard L+`` 에서 ``1st crystal`` 까지 최근접 했을 때 limiter bolt과 limter switch 간 간격이 실측 <50,000 um 임 (20240814 측정)
             .. image:: images/0030_Ly_limiter.png
                 :align: center
+            .. image:: images/0040_Ly_limiter_drawing.png
+                :align: center
         + 따라서, 실질적으로 최근접 할 수 있는 범위는 ``hard L+`` 로부터 780,810 um - 50,000 um = 730,000 um 는 될 것임
         + 그러나, 20240814에 측정한 최근접 시 이동pulse 값인 671,000 ump를 ``soft L-`` 값으로 사용하기로 함. 즉, -970,000 ump = -302,738 ump - 671,000 ump
     + encoder 사용 가능할 때 reference mark 위치: ``hard L+`` 에서 앞으로 -206,150 ump (20240806 측정)
