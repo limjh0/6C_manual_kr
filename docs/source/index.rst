@@ -13,5 +13,7 @@ Contents
    scripting/home
    dmm/home
    충방전기/home
+   trigger/home
+   
    
       
