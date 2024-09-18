@@ -1,13 +1,15 @@
-Excel에 지정된 시각에 triggered CT 수행해 자동 전송
+Excel chart의 지정된 시각에 triggered CT 수행해 자동 전송
 ==================================================
 
 .. attention:
 
     시:분 까지만 확인한다. 현재시각에서 지정된 시각과 분이 동일하면 CT를 수행한다. 만약, 현재시각이 지정된 시각을 지났으면 다음 지정된 시각이 되어야 CT를 수행한다
 
+
 .. attention:
 
     자정을 지났을 때 어떻게 동작하는지는 확인이 필요함
+
 
 #. .py script를 작성 또는 편집한다. script가 모여 있는 folder는
 
@@ -51,7 +53,7 @@ Excel에 지정된 시각에 triggered CT 수행해 자동 전송
 Script 예:
 
     .. code-block:: Python
-        :emphasize-lines: 121-122
+        :emphasize-lines: 122-123
         
         cond = {
             'exptime': 100,          # Expose time in milliseconds
