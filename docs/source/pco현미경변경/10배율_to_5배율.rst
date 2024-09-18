@@ -70,6 +70,9 @@
 
         #. **Slit 2** 를 조정해 연다
         #. **Long movable mask** 를 조정해 연다
+        
+        .. _auto-focusing:
+        
     #. Auto-focus 하기
         #. 초점을 맞추기 위한 target object를 **sample stage** 에 거치한다
 
