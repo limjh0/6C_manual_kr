@@ -18,6 +18,12 @@ Excel chart의 지정된 시각에 triggered CT 수행해 자동 전송
         C:\codes\run-scripts\
 
 #. 수정 후 저장한다
+#. CT 수행 시각을 아래 excel file에 기록한다
+
+    ::
+
+        C:\codes\bl6c_daq\sample.xlsx
+
 #. script를 실행한다
 
     .. code-block:: Python
