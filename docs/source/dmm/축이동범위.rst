@@ -48,7 +48,7 @@ DMM 각 축의 이동 범위
         + ``hard L+`` 에서 ``hard L-`` 까지 거리: 780,810 ump (pulse 값으로 780,810 um라는 의미임) (20240806 측정)
     + ``soft L-`` 는 -970,000 ump로 설정함 (20240909)
         + ``hard L+`` 에서 ``1st crystal`` 까지 최근접 했을 때 이동거리: 671,000 ump (20240814 측정; 그런데, 이 측정 때 ``hard L+`` pulse 값이 누락됨)
-        + ``hard L+`` 에서 ``1st crystal`` 까지 최근접 했을 때 limiter bolt과 limter switch 간 간격이 실측 <50,000 um 임 (20240814 측정)
+        + ``hard L+`` 에서 ``1st crystal`` 까지 최근접 했을 때 limiter bolt과 limter switch 간 간격이 실측 31,000 um 임 (20240814 측정); 여유있게 50,000 um라고 하자 
             .. image:: images/0030_Ly_limiter.png
                 :align: center
             .. image:: images/0040_Ly_limiter_drawing.png
