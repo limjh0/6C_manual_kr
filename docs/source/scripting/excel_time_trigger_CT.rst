@@ -59,7 +59,7 @@ Excel chart의 지정된 시각에 triggered CT 수행해 자동 전송
 Script 예:
 
     .. code-block:: Python
-        :emphasize-lines: 27, 122-123
+        :emphasize-lines: 26, 122-123
         
         cond = {
             'exptime': 100,          # Expose time in milliseconds
