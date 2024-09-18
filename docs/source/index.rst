@@ -12,4 +12,6 @@ Contents
    hamamatsu현미경변경/home
    scripting/home
    dmm/home
+   충방전기/home
+   
       

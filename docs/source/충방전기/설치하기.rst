@@ -1,0 +1,8 @@
+사용 위해 설치하기
+=============
+
+#. **전용 노트북 컴퓨터** 에 cabling:
+    .. image:: images/0010_notebook.png
+        :align: center
+
+    
