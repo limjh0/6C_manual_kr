@@ -18,6 +18,9 @@
 
         intellisense가 되는데, ``End`` key를 누른다
 
+    script code를 review하도록 다시 한 번 보여준다. \
+    ``Enter`` key를 한 번 더 눌러 줘야 실행이 된다
+
     .. tip::
 
         강제로 멈추고자 하면 ``ctrl+C``
