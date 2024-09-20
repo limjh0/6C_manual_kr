@@ -18,7 +18,7 @@ CT 정렬을 위한 ``target`` 을 mount 하고 beam on
 #. **sample stage** 의 ``X2`` 를 옮겨 대충 centering을 한다 (Excel에서 offset을 계산해 offset 양의 반대만큼 ``X2`` 를 이동시킴)
 #. ``vertical profile`` button 우측의 역삼각형을 눌러 펼친 후 ``horizontal profile`` button을 누른다
 #. 0도와 180도의 ``target`` 높이가 다를 때: **PCO1현미경** 과 **PCO2현미경** 은 ``micrometer 쌍`` 을 수동으로 돌려서 조정한다
-    .. image::images/0080_micrometer_pair.png  
+    .. image:: images/0080_micrometer_pair.png  
         :align: center
         
 #. 90도의 ``target`` 높이가 다를 때: **sample stage** 의 ``Ry`` 를 조정한다
