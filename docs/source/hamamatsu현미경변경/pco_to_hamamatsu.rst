@@ -1,4 +1,4 @@
-``pco.Edge카메라``에서 ``Hamamatsu카메라``로 변경
+``pco.Edge카메라`` 에서 ``Hamamatsu카메라`` 로 변경
 ===============================================
 **PCO1현미경** 또는 **PCO2현미경** 을 사용하다가 **OptiquePeter현미경** (이하, **OP현미경** )으로 변경한다고 가정하겠음
 
@@ -22,7 +22,7 @@
 
 #. ``s`` 를 눌러서 실행시킴
 
-    .. image:: images/0040_IOC_start.PNG
+    .. image:: images/0040_IOC_start.png
         :align: center
 
 #. **제어PC** 로 전환 후 terminal들을 켠다
@@ -38,7 +38,7 @@
     #. ``RunViewer`` 를 실행함
         #. GUI form이 생김
 
-            .. image:: images/0050_GUI_form.PNG
+            .. image:: images/0050_GUI_form.png
                 :align: center
 
         #. ``ImageViewer [HAMA]`` button을 누름
@@ -62,4 +62,6 @@
 
         ``Hamamatsu camera`` 는 time-stamp 기능이 없다. 각 file이름에 시간이 붙는다
 
+#. **OP현미경** 을 정렬한다. 이를 위해 ``Optical table``을 이동한다 (축 이름이 무엇??)
+#. 
 
