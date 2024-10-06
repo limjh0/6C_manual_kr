@@ -118,5 +118,5 @@
         .. image:: images/0050_enable_button.png
             :align: center
 
-#. :doc:`CT 정렬 <CT정렬>`한다
+#. :doc:`CT 정렬 <CT정렬>` 한다
 #. :doc:`Script <../scripting/home>` 를 작성한다

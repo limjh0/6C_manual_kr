@@ -64,8 +64,24 @@
 
 
 #. **OP현미경** 을 빔 위치로 이동시킨다. 이를 위해 ``Optical table`` 을 이동한다 (축 이름이 무엇??)
+    #. ``Image Viewer`` form에 ``Sync`` 를 check 한다: 카메라와 shutter를 동기화함
+
+        .. image:: images/0053_Image_viewer.png
+            :align: center
+
+    #. **OP현미경** 코에 형광판을 달아서 빔 위치를 확인한다
+
+        .. image:: images/0056_fluorescent_screen.png
+            :align: center
+
+    #. ``Hamamatsu camera`` 로 빔을 확인한다
+    #. **Slit 2** 를 조정한다
+    #. **Long movable mask** 를 조정한다
 #. **Sample stage** 를 옮겨서 설치한다: ``Optical table`` 위의 표시된 위치로 옮기고, 고정할 두 개의 볼트가 screw홀에 잘 들어가면 **sample stage** 를 ``Optical table`` 길이 방향으로 밀어서 (유격이 있음) 이전 위치와 같게 한다
 #. **OP현미경** 의 대물렌즈를 확인하고, 필요시 교체한다
+
+    .. _focusing:
+
 #. **OP현미경** 의 초점을 맞춘다:
     #. 초점을 맞추기 위한 target object를 **sample stage** 에 거치한다
 
@@ -121,6 +137,6 @@
         .. image:: images/0110_enable_button.png
             :align: center
 
-#. :doc:`CT 정렬 <CT정렬>`한다
+#. :doc:`CT 정렬 <CT정렬>` 한다
 #. :doc:`Script <../scripting/home>` 를 작성한다
 
