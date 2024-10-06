@@ -78,6 +78,10 @@
     #. **Slit 2** 를 조정한다
     #. **Long movable mask** 를 조정한다
 #. **Sample stage** 를 옮겨서 설치한다: ``Optical table`` 위의 표시된 위치로 옮기고, 고정할 두 개의 볼트가 screw홀에 잘 들어가면 **sample stage** 를 ``Optical table`` 길이 방향으로 밀어서 (유격이 있음) 이전 위치와 같게 한다
+    
+    .. image:: images/0057_sample_stage.png
+        :align: center
+
 #. **OP현미경** 의 대물렌즈를 확인하고, 필요시 교체한다
 
     .. _focusing:

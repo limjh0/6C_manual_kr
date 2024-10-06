@@ -10,10 +10,13 @@ Contents
 
    pco현미경변경/home
    hamamatsu현미경변경/home
+   trigger/home
    scripting/home
    dmm/home
    충방전기/home
-   trigger/home
+   interlock/home
+   troubles?/home
+   issues/home
    
    
       
