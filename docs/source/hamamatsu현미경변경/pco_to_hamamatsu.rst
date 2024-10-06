@@ -63,5 +63,5 @@
         ``Hamamatsu camera`` 는 time-stamp 기능이 없다. 각 file이름에 시간이 붙는다
 
 #. **OP현미경** 을 정렬한다. 이를 위해 ``Optical table``을 이동한다 (축 이름이 무엇??)
-#. 
+#. **OP현미경** 의 렌즈 정렬한다.
 
