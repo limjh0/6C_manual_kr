@@ -5,7 +5,7 @@
 #. **제어PC** 에서 세 개의 terminal들 중, ``tiffWriter`` 를 제외한 ``PyDM`` terminal과 ``IPython`` terminal을 닫는다
 #. *원격데스크탑* 으로 **수집PC** 에 접속한다 (10.10.62.115) -> ``pco IOC`` terminal을 닫는다
 #. 실험허치에 들어가 **PCO1현미경** 의 ``pco.Edge카메라`` 의 전원을 끈다. **PCO2현미경** 의 ``pco.Edge카메라`` 의 전원을 켠다
-#. **광학테이블** 아래에 있는 ``trigger switch`` 를 ``PCO1`` 으로 변경한다
+#. **광학테이블** 아래에 있는 ``trigger switch`` 를 ``PCO2`` 으로 변경한다
 
     .. image:: images/0010_trigger_switch.png
         :align: center
