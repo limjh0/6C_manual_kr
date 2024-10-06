@@ -47,75 +47,76 @@
 
                 cd ../run_scripts/
     
-    #. **SG현미경** 을 정렬함        
-        #. ``Image Viewer`` form에 ``Sync`` 를 check 한다: 카메라와 shutter를 동기화함
+#. **SG현미경** 을 정렬함        
+    #. ``Image Viewer`` form에 ``Sync`` 를 check 한다: 카메라와 shutter를 동기화함
 
-            .. image:: images/0020_Image_viewer.png
-                :align: center
+        .. image:: images/0020_Image_viewer.png
+            :align: center
 
-        #. ``Time stamp`` 를 쓰려면 ``2`` ; 쓰지 않으려면 ``0``
+    #. ``Time stamp`` 를 쓰려면 ``2`` ; 쓰지 않으려면 ``0``
 
-            .. tip::
+        .. tip::
 
-                정렬 중에는 ``Time stamp`` 를 꺼둘 것: 영상의 histogram에 영향을 준다
+            정렬 중에는 ``Time stamp`` 를 꺼둘 것: 영상의 histogram에 영향을 준다
 
-        #. **SG_Stage** 의 ``X`` 값을 바꿔서 **PCO2현미경** 이 **sample stage** 뒤에 위치하게 한다. 이를 위해 
-            #. Stage control form에서 ``PCO CCD`` button을 누른다
-            #. ``SG STAGE X`` 값을 조정해 현미경 stage를 옆으로 움직인다
+    #. **SG_Stage** 의 ``X`` 값을 바꿔서 **PCO2현미경** 이 **sample stage** 뒤에 위치하게 한다. 이를 위해 
+        #. Stage control form에서 ``PCO CCD`` button을 누른다
+        #. ``SG STAGE X`` 값을 조정해 현미경 stage를 옆으로 움직인다
 
-        #. **PCO2현미경** 코에 형광판을 달아서 빔 위치를 확인한다
+    #. **PCO2현미경** 코에 형광판을 달아서 빔 위치를 확인한다
 
-            .. image:: images/0030_fluorescent_screen.png
-                :align: center
+        .. image:: images/0030_fluorescent_screen.png
+            :align: center
 
-        #. **Slit 2** 를 조정해 연다
-        #. **Long movable mask** 를 조정해 연다
+    #. **Slit 2** 를 조정해 연다
+    #. **Long movable mask** 를 조정해 연다
+    
+    .. _auto-focusing:
+    
+#. Auto-focus 하기
+    #. 초점을 맞추기 위한 target object를 **sample stage** 에 거치한다
+
+        .. image:: images/0037_plywood.png
+            :align: center
+
+    #. ROI 지정하기 위해 ``Box`` button을 누른다
+
+        .. image:: images/0040_box_button.png
+            :align: center
+
+    #. 빔이 상하로 움직이는 것이 영향을 주므로, 빔 밝기가 변하지 않는 지점에 ROI를 만든다
+    #. auto-focus를 실행한다: 가령, step size는 7 um, 횟수 21, 노출시간 0.1초
+
+        .. code-block:: Python
+
+            RE(screen_align_cen(pco, focus2, 대략적인 SG_Stage Z2 값, 7, 21, time=0.1)
+            RE(screen_align_cen(pco, focus2, 대략적인 SG_Stage Z2 값, step size, 횟수 (홀수여야 함), time=0.1)
+
+    #. Graph가 그려진다. 이 때, ``Total`` 은 불필요하므로 uncheck할 것
+
+        .. image:: images/0045_scintillator_align_graph.png 
+            :align: center
+
+    #. Graph가 그려지면 ``scintillation screen`` 의 tilt 제어를 자동으로 할 것인지 물어 봄. \ ``y`` 는 자동; ``n`` 은 수동
+
+        .. attention::
+
+            ``n`` 을 누를 것. \ 
+            ``y`` 로 했을 때 제대로 모터가 동작하는지 테스트가 되지 않았음.
+
+    #. 수동으로 tilt 제어한다. \ **Scintillator Tilt Stage** 에서 
+        + ``TR`` 을 수평조정 계산값 만큼 보낸다
+        + ``TB`` 를 수직조장 계산값 만큼 보낸다
         
-        .. _auto-focusing:
-        
-    #. Auto-focus 하기
-        #. 초점을 맞추기 위한 target object를 **sample stage** 에 거치한다
-
-            .. image:: images/0037_plywood.png
+            .. image:: images/0048_tilt_adjust.png
                 :align: center
 
-        #. ROI 지정하기 위해 ``Box`` button을 누른다
+    #. Scintillator tilt를 조절했으면 auto-focus를 재실행해서 제대로 보정되었는지 확인한다
+    #. **SG_Stage** ``Z2`` 가 찾아진 값으로 되어 있는지도 확인한다
+    #. 최종적으로, ``Enable`` button을 눌러서 ``Stats`` LED가 켜지게 한다
 
-            .. image:: images/0040_box_button.png
-                :align: center
+        .. image:: images/0050_enable_button.png
+            :align: center
 
-        #. 빔이 상하로 움직이는 것이 영향을 주므로, 빔 밝기가 변하지 않는 지점에 ROI를 만든다
-        #. auto-focus를 실행한다: 가령, step size는 7 um, 횟수 21, 노출시간 0.1초
-
-            .. code-block:: Python
-
-                RE(screen_align_cen(pco, focus2, 대략적인 SG_Stage Z2 값, 7, 21, time=0.1)
-                RE(screen_align_cen(pco, focus2, 대략적인 SG_Stage Z2 값, step size, 횟수 (홀수여야 함), time=0.1)
-
-        #. Graph가 그려진다. 이 때, ``Total`` 은 불필요하므로 uncheck할 것
-
-            .. image:: images/0045_scintillator_align_graph.png 
-                :align: center
-
-        #. Graph가 그려지면 ``scintillation screen`` 의 tilt 제어를 자동으로 할 것인지 물어 봄. \ ``y`` 는 자동; ``n`` 은 수동
-
-            .. attention::
-
-                ``n`` 을 누를 것. \ 
-                ``y`` 로 했을 때 제대로 모터가 동작하는지 테스트가 되지 않았음.
-
-        #. 수동으로 tilt 제어한다. \ **Scintillator Tilt Stage** 에서 
-            + ``TR`` 을 수평조정 계산값 만큼 보낸다
-            + ``TB`` 를 수직조장 계산값 만큼 보낸다
-            
-                .. image:: images/0048_tilt_adjust.png
-                    :align: center
-
-        #. Scintillator tilt를 조절했으면 auto-focus를 재실행해서 제대로 보정되었는지 확인한다
-        #. **SG_Stage** ``Z2`` 가 찾아진 값으로 되어 있는지도 확인한다
-        #. 최종적으로, ``Enable`` button을 눌러서 ``Stats`` LED가 켜지게 한다
-
-            .. image:: images/0050_enable_button.png
-                :align: center
-
-    #. :doc:`Script <../scripting/home>` 를 작성한다
+#. :doc:`CT 정렬 <CT정렬>`한다
+#. :doc:`Script <../scripting/home>` 를 작성한다

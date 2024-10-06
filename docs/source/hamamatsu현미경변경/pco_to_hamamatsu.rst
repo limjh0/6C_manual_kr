@@ -63,8 +63,64 @@
         ``Hamamatsu camera`` 는 time-stamp 기능이 없다. 각 file이름에 시간이 붙는다
 
 
-#. **OP현미경** 을 정렬한다. 이를 위해 ``Optical table``을 이동한다 (축 이름이 무엇??)
+#. **OP현미경** 을 빔 위치로 이동시킨다. 이를 위해 ``Optical table`` 을 이동한다 (축 이름이 무엇??)
+#. **Sample stage** 를 옮겨서 설치한다: ``Optical table`` 위의 표시된 위치로 옮기고, 고정할 두 개의 볼트가 screw홀에 잘 들어가면 **sample stage** 를 ``Optical table`` 길이 방향으로 밀어서 (유격이 있음) 이전 위치와 같게 한다
 #. **OP현미경** 의 대물렌즈를 확인하고, 필요시 교체한다
+#. **OP현미경** 의 초점을 맞춘다:
+    #. 초점을 맞추기 위한 target object를 **sample stage** 에 거치한다
 
+        .. image:: images/0060_plywood.png
+            :align: center
 
+    #. ROI 지정하기 위해 ``Box`` button을 누른다
+
+        .. image:: images/0070_box_button.png
+            :align: center
+
+    #. 빔이 상하로 움직이는 것이 영향을 주므로, 빔 밝기가 변하지 않는 지점에 ROI를 만든다
+    #. auto-focus를 실행한다: 가령, step size는 7 um, 횟수 21, 노출시간 0.1초
+
+        .. code-block:: Python
+
+            RE(screen_align_cen(hama, sample.camera_focus, 대략적인 초점값, 7, 21, time=0.1)
+            RE(screen_align_cen(hama, sample.camera_focus, 대략적인 초점값, step size, 횟수 (홀수여야 함), time=0.1)
+
+    #. Graph가 그려진다. 이 때, ``Total`` 은 불필요하므로 uncheck할 것
+
+        .. image:: images/0080_scintillator_align_graph.png 
+            :align: center
+
+    #. Graph가 그려지면 ``scintillation screen`` 의 tilt 제어를 자동으로 할 것인지 물어 봄. \ ``y`` 는 자동; ``n`` 은 수동
+
+        .. note::
+
+            **OP현미경** 은 tilt 제어가 수동으로만 가능함
+
+        .. attention::
+
+            ``n`` 을 누를 것. 
+
+        .. image:: images/0090_tilt_adjust.png
+            :align: center
+
+    #. ``OP현미경`` 의 수동 tilt 조정:
+        + 수평조정 계산값이
+            + 양수: ``C`` 를 시계 방향으로 돌린다; 또는 ``B`` 를 반시계 방향으로 돌린다
+            + 음수: ``C`` 를 반시계 방향으로 돌린다; 또는 ``B`` 를 시계 방향으로 돌린다  
+        + 수직조정 계산겂이
+            + 양수: ``A`` 를 시계 방향으로 돌린다; 또는 ``B`` 와 ``C`` 를 모두 반시계 방향으로 돌린다
+            + 음수: ``A`` 를 반시계 방향으로 돌린다; 또는 ``B`` 와 ``C`` 를 모두 시계 방향으로 돌린다 
+    
+            .. image:: images/0100_OP_scintillator_align.png
+                :align: center
+
+    #. Scintillator tilt를 조절했으면 auto-focus를 재실행해서 제대로 보정되었는지 확인한다
+    #. **OP현미경** ``focus`` 가 찾아진 값으로 되어 있는지도 확인한다
+    #. 최종적으로, ``Enable`` button을 눌러서 ``Stats`` LED가 켜지게 한다
+
+        .. image:: images/0110_enable_button.png
+            :align: center
+
+#. :doc:`CT 정렬 <CT정렬>`한다
+#. :doc:`Script <../scripting/home>` 를 작성한다
 
