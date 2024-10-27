@@ -27,9 +27,9 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
 
 .. warning::
 
-    ``0`` button은 누르면 안 됨! 현재 각도를 0으로 설정함
+    ``Enable`` button 왼쪽에 있는 ``0`` button은 누르면 안 됨!!! 현재 각도를 0으로 설정함
 
-``Elmo Application Studio II``에서 ``0`` button을 누르면 현재 각도를 0으로 설정함:
+혹시, ``Elmo Application Studio II`` 에서 ``0`` button을 누르면 현재 각도를 0으로 설정함:
 
     .. image:: images/0180_elmo_zero_button.png
         :align: center

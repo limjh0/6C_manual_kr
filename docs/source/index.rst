@@ -15,7 +15,7 @@ Contents
    dmm/home
    충방전기/home
    interlock/home
-   troubles?/home
+   troubles/home
    issues/home
    
    

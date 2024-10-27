@@ -1,4 +1,4 @@
-**Interlock** 과 **local interlock**
+Interlock 과 Local interlock
 ===========================
 
 .. toctree::
