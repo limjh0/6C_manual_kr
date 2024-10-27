@@ -5,6 +5,6 @@ Triggering
 
     introduction
     hamamatsu
-    trigger동작이상조치
+    동작이상조치
 
     
