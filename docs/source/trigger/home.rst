@@ -4,6 +4,6 @@ Triggering
 .. toctree::
 
     introduction
-    이상동작조치
+    trigger동작이상조치
 
     
