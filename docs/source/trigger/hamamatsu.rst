@@ -37,7 +37,7 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
             :align: center
 
     + ``Hamamatsu카메라`` 에서 영상이 올라오는지 확인하기
-        #. trigger mode를 ``external`` 로 변경 ( :doc: `<camera별setting_command>` )
+        #. trigger mode를 ``external`` 로 변경 ( :doc:`변경 방법 <camera별setting_command>` )
         #. ``Rotation stage`` 를 ``-5도`` 로 보낸 후, ``0도`` 지나게 회전시키면서, 카메라 화면이 올라오는지 확인한다
         #. 이후 작업을 편리하게 하기 위해 trigger mode를 ``internal`` 로 변경한다
 
