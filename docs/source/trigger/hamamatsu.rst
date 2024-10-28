@@ -33,7 +33,7 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
 #. 제대로 trigger 되는지 확인하기:
 
     + ``Rotation stage`` 를 ``-5도`` 로 보낸 후, ``0도`` 지나게 회전시키면서, ``Generated Pulses OC[12]`` 에 값이 증가하는지 확인하기
-        .. image:: images/0200_elmo_generated_pulses.png
+        .. image:: images/0201_elmo_generated_pulses.png
             :align: center
 
     + ``Hamamatsu카메라`` 에서 영상이 올라오는지 확인하기
