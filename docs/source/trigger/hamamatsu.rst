@@ -28,7 +28,7 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
     .. warning::
 
         ``Enable`` button 왼쪽에 있는 ``0`` button은 누르면 안 됨!!! 
-        현재 각도를 0으로 설정함. 혹시, ``0`` button을 눌렀을 경우 :ref:`링크 <0_button>` 
+        현재 각도를 0으로 설정함. 혹시, ``0`` button을 :ref:`눌렀을 경우 클릭 <0_button>` 
 
 #. 제대로 trigger 되는지 확인하기:
 
@@ -37,11 +37,15 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
             :align: center
 
     + ``Hamamatsu카메라`` 에서 영상이 올라오는지 확인하기
-        #. trigger mode를 ``external`` 로 변경 ( :doc:`변경 방법 <camera별setting_command>` )
+        #. trigger mode를 ``external`` 로  :doc:`변경 <camera별setting_command>`
         #. ``Rotation stage`` 를 ``-5도`` 로 보낸 후, ``0도`` 지나게 회전시키면서, 카메라 화면이 올라오는지 확인한다
         #. 이후 작업을 편리하게 하기 위해 trigger mode를 ``internal`` 로 변경한다
 
 .. _0_button:
+
+
+참고 사항
+^^^^^^^^
 
 혹시, ``Elmo Application Studio II`` 에서 ``0`` button을 누르면 현재 각도를 0으로 설정함:
 
