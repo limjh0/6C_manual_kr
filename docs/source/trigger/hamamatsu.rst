@@ -28,7 +28,7 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
     .. warning::
 
         ``Enable`` button 왼쪽에 있는 ``0`` button은 누르면 안 됨!!! 
-        현재 각도를 0으로 설정함. 혹시, ``0`` button을 눌렀을 경우 :ref:`0_button` 
+        현재 각도를 0으로 설정함. 혹시, ``0`` button을 눌렀을 경우 :ref:`링크 <0_button>` 
 
 #. 제대로 trigger 되는지 확인하기:
 
