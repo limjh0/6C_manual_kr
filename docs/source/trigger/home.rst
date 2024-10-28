@@ -4,6 +4,6 @@ Triggering
 .. toctree::
 
     introduction
-    hamamatsu
     camera별setting_command
+    hamamatsu    
     동작이상조치

@@ -16,3 +16,6 @@
     +=================+==========+==========+
     | trigger_source  |    0     |    1     |
     +-----------------+----------+----------+
+
+    .. image:: images/0210_hamamatsu_trigger_modes.png
+        :align: center
