@@ -14,11 +14,11 @@ SG현미경 대물렌즈 교체
 
 #. 주변 먼지를 air-gun으로 살살 불어낸다
 
-#. 상단의 나사 2개를 푼다
+#. ``커버`` 상단의 나사 2개를 푼다
     .. image:: images/0110_pco1현미경_열기.png
         :align: center
 
-#. 절반을 분리해 낸다. 노출된 ``10배율대물렌즈`` 앞에 ``납유리`` 가 장착되어 있다
+#. ``커버`` 절반을 분리해 낸다. 노출된 ``10배율대물렌즈`` 앞에 ``납유리`` 가 장착되어 있다
     .. image:: images/0130_pco1현미경_열기_절반.png
         :align: center
 
@@ -37,5 +37,31 @@ SG현미경 대물렌즈 교체
 
 #. ``납유리`` 가 장착된 ``4배율대물렌즈`` 를 준비한다
     .. image:: images/0170_pco1현미경_대물렌즈.png
+        :align: center
+
+#. 이 대물렌즈를 설치한다
+    .. image:: images/0180_pco1현미경_대물렌즈설치.png
+        :align: center
+
+    .. image:: images/0190_pco1현미경_대물렌즈설치.png
+        :align: center
+
+#. ``커버`` 를 뒤(즉, 맨 안쪽)부터 먼저 끼운다. 그리고, 앞쪽으로 당긴다
+    .. image:: images/0200_pco1현미경_커버조립.png
+        :align: center
+
+#. ``커버`` 를 조립하고, 나사를 체결한다
+    .. image:: images/0210_pco1현미경_커버조립나사.png
+        :align: center
+
+#. ``Aluminum포일`` 을 덮는다
+    .. image:: images/0220_pco1현미경_Al-foil부착.png
+        :align: center
+
+#. 빛이 세어 들어가지 않게 경통 주위를 aluminum포일로 싸서 덮는다
+    .. image:: images/0230_pco1현미경_경통싸기.png
+        :align: center
+
+    .. image:: images/0240_pco1현미경_경통싸기.png
         :align: center
 
