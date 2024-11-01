@@ -8,34 +8,34 @@ SG현미경 대물렌즈 교체
 
 #. ``초점`` 을 최대한 뒤로 빼서 안전하게 이후 작업을 진행할 수 있게 함
 
-#. ``Aluminum포일``을 조심스럽게 벗긴다
-    .. image:: 0100_pco1현미경_Al-foil제거.png
+#. ``Aluminum포일`` 을 조심스럽게 벗긴다
+    .. image:: images/0100_pco1현미경_Al-foil제거.png
         :align: center
 
 #. 주변 먼지를 air-gun으로 살살 불어낸다
 
 #. 상단의 나사 2개를 푼다
-    .. image:: 0110_pco1현미경_열기.png
+    .. image:: images/0110_pco1현미경_열기.png
         :align: center
 
 #. 절반을 분리해 낸다. 노출된 ``10배율대물렌즈`` 앞에 ``납유리`` 가 장착되어 있다
-    .. image:: 0130_pco1현미경_열기_절반.png
+    .. image:: images/0130_pco1현미경_열기_절반.png
         :align: center
 
 #. 나버지 절반도 분리해 낸다. 노출된 ``10배율대물렌즈`` 앞에 ``납유리`` 가 장착되어 있다
-    .. image:: 0140_pco1현미경_열기_완전.png
+    .. image:: images/0140_pco1현미경_열기_완전.png
         :align: center
 
 #. ``10배율대물렌즈`` 를 분리한다
-    .. image:: 0150_pco1현미경_대물렌즈분리.png
+    .. image:: images/0150_pco1현미경_대물렌즈분리.png
         :align: center
 
-    .. image:: 0160_pco1현미경_대물렌즈분리.png
+    .. image:: images/0160_pco1현미경_대물렌즈분리.png
         :align: center
 
 #. 분리된 ``10배율대물렌즈`` 를 잘 보관한다
 
 #. ``납유리`` 가 장착된 ``4배율대물렌즈`` 를 준비한다
-    .. image:: 0170_pco1현미경_대물렌즈.png
+    .. image:: images/0170_pco1현미경_대물렌즈.png
         :align: center
 
