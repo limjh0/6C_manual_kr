@@ -1,0 +1,5 @@
+SG현미경 대물렌즈 교체
+=====================
+**PCO1현미경** 의 현재 ``10배율대물렌즈`` 를 ``4배율대물렌즈`` 로 교체한다고 가정하겠음
+
+#. **PCO1현미경** 의 body는 `Olympus BXFM 현미경 <https://drive.google.com/file/d/12mD0aFRO4p_kaQE4HU7Afzzrp8QawhPq/view?usp=drive_link>`_ 의 `주요 component <https://drive.google.com/file/d/1ivynDjWpbQndYibhYBk3Wc-1HLyNskzI/view?usp=drive_link>`_ 를 사용 또는 제작해 김섭구 선생님이 설계 및 조립함
