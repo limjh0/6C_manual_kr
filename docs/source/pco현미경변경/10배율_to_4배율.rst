@@ -6,7 +6,7 @@ SG현미경 대물렌즈 교체
     .. image:: images/0090_pco1현미경.png
         :align: center
 
-#. ``초점`` 을 최대한 뒤로 빼서 안전하게 이후 작업을 진행할 수 있게 함
+#. 초점을 최대한 뒤로 빼서 (즉, ``SG STAGE Z1`` 값을 +limit로 보내서) 안전하게 이후 작업을 진행할 수 있게 함
 
 #. ``Aluminum포일`` 을 조심스럽게 벗긴다
     .. image:: images/0100_pco1현미경_Al-foil제거.png
@@ -43,7 +43,7 @@ SG현미경 대물렌즈 교체
     .. image:: images/0180_pco1현미경_대물렌즈설치.png
         :align: center
 
-    .. image:: images/0190_pco1현미경_대물렌즈설치.png
+    .. image:: images/0190_pco1현미경_대물렌즈설치_납유리홀더방향.png
         :align: center
 
 #. ``커버`` 를 뒤(즉, 맨 안쪽)부터 먼저 끼운다. 그리고, 앞쪽으로 당긴다
@@ -64,4 +64,9 @@ SG현미경 대물렌즈 교체
 
     .. image:: images/0240_pco1현미경_경통싸기.png
         :align: center
+
+#. 초점을 찾는다: ``SG STAGE Z1`` 값을 내리는데, -limit가 없고, 거울과 충돌위험 있으니, 조심스럽게 내린다
+
+    .. warning::
+        ``SG STAGE Z1`` 값을 내릴 때, -limit가 없고, 거울과 충돌위험 있으니, 조심스럽게 내린다
 
