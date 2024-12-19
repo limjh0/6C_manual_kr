@@ -3,7 +3,7 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
 ``pco.Edge카메라`` 를 사용하다가 ``Hamamatsu카메라`` 로 변경하는 것으로 가정함.
 
 #. *원격데스크탑* 으로 **수집PC** 에 접속한다 (10.10.62.115)
-#. ``Elmo Application Studio II`` 를 찾는다. 만약 ``Elmo Application Studio II``를 처음 실행한 경우 device와 연결이 안 되어 있을 수 있다. 이 경우 아래에서 마우스 오른쪽버튼을 누르면 connect시킬 수 있다
+#. ``Elmo Application Studio II`` 를 찾는다. 만약 ``Elmo Application Studio II`` 를 처음 실행한 경우 device와 연결이 안 되어 있을 수 있다. 이 경우 아래에서 마우스 오른쪽버튼을 누르면 connect시킬 수 있다
 
     .. image:: images/0139_elmo_connect.png
         :align: center
