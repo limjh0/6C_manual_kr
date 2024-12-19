@@ -13,3 +13,12 @@ Camera 영상은 들어오는데, statistics 값 (mean, std)이 변하지 않을
 
         setup_pco()
 
+
+영상이 display되지 않을 때
+-------------------------------------------------------------------
+
++ 영상을 촬영했는데, 새 영상이 올라오지 않음
++ ``Display Enable`` 되어 있는지 확인
+
+    .. image:: images/0060_display_enable.png
+        :align: center
