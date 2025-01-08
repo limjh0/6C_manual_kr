@@ -45,9 +45,7 @@ Trigger 설정 ( ``Rotataion stage`` 와 ``Hamamatsu카메라`` 동기화)
         #. ``Rotation stage`` 를 ``-5도`` 로 보낸 후, ``0도`` 지나게 회전시키면서, 카메라 화면이 올라오는지 확인한다
         #. 이후 작업을 편리하게 하기 위해 trigger mode를 ``internal`` 로 변경한다
 
-    .. note::
-
-        ``CSS`` 의 ``STOP`` 및 ``Python script`` 에서 stop command는 ``Elmo Application Studio II`` 의 ``Stop`` button과 ``Start`` button을 연달아 누르는 기능을 한다. 이를 통해 ``Generated Pulses OC[12]`` 값을 reset한다.
+    + ``CSS`` 의 ``STOP`` 및 ``Python script`` 에서 stop command는 ``Elmo Application Studio II`` 의 ``Stop`` button과 ``Start`` button을 연달아 누르는 기능을 한다. 이를 통해 ``Generated Pulses OC[12]`` 값을 reset한다.
         .. image:: images/0160_elmo_start_button.png
             :align: center
 
